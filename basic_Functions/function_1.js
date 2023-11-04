@@ -31,11 +31,11 @@
 // console.log(printCart(cart)); // The shirt costs 100
 
 
-if (true) {
- let a = 10;
- const b = 20;
- var c = 30;
-}
+// if (true) {
+//  let a = 10;
+//  const b = 20;
+//  var c = 30;
+// }
 
 // console.log(a)
 // console.log(b)
@@ -43,5 +43,39 @@ if (true) {
 // The scope of var is global
 
 
+// Nested SCoopes
+// function outer() {
+//     let a = 10;
+//     function inner() {
+//         let b = 20;
+//         console.log(a)
+//     }
+//
+//     // console.log(b)
+//     inner();
+// }
+// outer()
+
+//scope example using nested if else
+// let a = 10;
+// if (true) {
+//     let b = 20;
+//     if (true) {
+//         let c = 30;
+//         console.log(a + b + c);
+//     }
+//     // console.log(c) // not accessible
+// }
 
 
+console.log(addone(10))
+function addone(num) {
+    return num + 1;
+}
+
+// console.log(addTwo(10))// not accessible
+
+const addTwo = function (num) {
+    return num + 2;
+}
+console.log(addTwo(10))// accessible
