@@ -19,11 +19,29 @@
 
 // Explaining reference data types
 
-const vilan = ['Joker','Lex Luthor','Voldemort','Sauron']
-const vilanObj = {name:'Joker',power:'Money'}
-console.log(typeof vilan)
+// const vilan = ['Joker','Lex Luthor','Voldemort','Sauron']
+// const vilanObj = {name:'Joker',power:'Money'}
+// console.log(typeof vilan)
+//
+// const myFn=function(){
+//     console.log('Hello')
+// }
+// console.log(myFn())
 
-const myFn=function(){
-    console.log('Hello')
-}
-console.log(myFn())
+// how memory is allocated to variables in JavaScript primitive data types and non-primitive data types
+
+// Primitive data types example
+let myNmbr = 10
+let myNmbr2 = myNmbr
+console.log(myNmbr,myNmbr2)
+myNmbr2 = 20
+console.log(myNmbr,myNmbr2)
+console.log(myNmbr===myNmbr2)
+console.log('-------------------')
+// Non-primitive data types example
+let myArray = [1,2,3,4,5]
+let myArray2 = myArray
+console.table([myArray,myArray2])
+myArray2.push(6)
+console.table([myArray,myArray2])
+console.log(myArray===myArray2)
