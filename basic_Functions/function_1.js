@@ -6,7 +6,7 @@
 // function to add two numbers
 // console.log(multiply(2, 3));
 
-//function with default paameters
+//function with default parameters
 // function def_multiply(a, b = 4) {
 //     return a * b;
 // }
