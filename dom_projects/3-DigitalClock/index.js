@@ -1,4 +1,4 @@
-// get local time here
-const time = new Date().toLocaleString();
-console.log(time);
-document.querySelector('#clock').textContent = time;
+setInterval(() => {
+    const time = new Date().toLocaleTimeString();
+    document.querySelector('#clock').textContent = time;
+}, 1000);
