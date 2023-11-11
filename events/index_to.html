@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sync & Async</title>
+</head>
+<body>
+   <h1>Junaid aka DevJun</h1>
+    <button id="rukja" > Rukja </button>
+</body>
+<script>
+    const devjun=function () {
+        console.log('Hai DevJun')
+    }
+    const altrText=function () {
+        console.log('called')
+    document.querySelector('h1').innerHTML='Noob developer'
+    }
+   const chnage = setTimeout(altrText,5000)
+    // setTimeout(devjun,2000)
+    const btn=document.querySelector('#rukja')
+    btn.addEventListener('click',function () {
+        console.log('Rukja clicked')
+        clearTimeout(chnage)
+    })
+</script>
+</html>

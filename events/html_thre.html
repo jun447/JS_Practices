@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sync & Async</title>
+</head>
+<body>
+<h1>Nami Danum</h1>
+<button id="chalPr">Chal Ja Bhai</button>
+<button id="rukja" > Rukja </button>
+</body>
+<script>
+  const chaltaJa = function (name) {
+      console.log(name)
+  }
+  let meraIntrvl;
+  document.querySelector('#chalPr').addEventListener('click',function () {
+      console.log('Chalpr clicked')
+      meraIntrvl=setInterval(chaltaJa,1000,'JunDev')
+
+  })
+  const btn=document.querySelector('#rukja')
+  btn.addEventListener('click',function () {
+      console.log('Rukja clicked')
+      clearInterval(meraIntrvl)
+  })
+</script>
+</html>
