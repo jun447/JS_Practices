@@ -14,6 +14,7 @@ btn_strt.addEventListener('click',function () {
 
 btn_stop.addEventListener('click',function () {
     clearInterval(intervalId)
+    intervalId = null
     console.log('stop Clicked')
 })
 
