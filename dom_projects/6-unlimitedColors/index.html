@@ -4,9 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Number Guessing Game</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Random Color Changer</title>
     <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .btn{
+
+        color: #212121;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        margin: 10px;
+      }
+      .strt{
+        background-color: lawngreen;
+        color: red;
+      }
+      .stp{
+        background-color: lightcoral;
+        color: green;
+      }
+    </style>
   </head>
   <body style="background-color: #212121; color: #fff">
     <nav>
@@ -14,8 +33,8 @@
     </nav>
 
     <h1>Start should change the Background color every second</h1>
-    <button id="start">Start</button>
-    <button id="stop">Stop</button>
+    <button class="btn strt" id="start">Start</button>
+    <button class="btn stp" id="stop">Stop</button>
     <script src="index.js"></script>
   </body>
 </html>
