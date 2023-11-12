@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+     Consectetur culpa debitis distinctio dolorem doloremque ea odio rem sunt ullam voluptatibus!</p>
+</body>
+<script>
+    const req = new XMLHttpRequest()
+    req.open(
+        'GET','https://api.github.com/users/jun447'
+    )
+    req.onreadystatechange = function(){
+        console.log('Idr Mer',req.readyState)
+        if(req.readyState===4){
+            console.log('Ho Gya Farig')
+            // console.log(req.responseText)
+            console.log(this.responseText)
+            const data =JSON.parse(this.responseText)
+            console.log((data.followers))//data comes in string often so convert into objests
+        }
+    }
+    req.send()
+    console.log(req.readyState)
+</script>
+</html>
