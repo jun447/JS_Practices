@@ -22,3 +22,6 @@ Abstraction
 Encapsulation
 Inheritance
 Polymorphism
+
+## `this`  for that callme is global
+![img.png](img.png)
