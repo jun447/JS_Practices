@@ -5,8 +5,8 @@ function SetUsername(username) {
 
 function createUser(username,email,password) {
     // SetUsername.call(username)
-    SetUsername.call(this,username) // to hold thats reference
-    // i will tell him use my this not your this , you this will die
+    SetUsername.call(this,username) // to hold that's reference
+    // I will tell him use my this not your this , you this will die
     this.email = email
     this.password = password
 }
